@@ -1,7 +1,7 @@
 <h1>タスク一覧</h1>
 
 <ul>
-  <% @task.each do |tasks| %>
+  <% @tasks.each do |tasks| %>
     <li><%= link_to tasks.id, tasks %> : <%= tasks.status %> &gt; <%= tasks.content %></li>
   <% end %>
 </ul>
